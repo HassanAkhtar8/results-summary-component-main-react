@@ -1,0 +1,206 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.1;
+  word-break: break-all;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(221, 100%, 96%);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+#root main {
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  grid-area: head;
+  padding: 1.2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+#root main h1 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto;
+  font-weight: 600;
+  color: hsl(241, 100%, 89%);
+}
+#root main h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 1rem auto;
+  color: hsl(0, 0%, 100%);
+}
+#root main p {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0 2rem;
+  margin: 1rem auto 4rem auto;
+  line-height: 1.5rem;
+}
+#root main .circle {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, hsla(241, 72%, 46%, 0), hsl(256, 72%, 46%));
+  margin: 0 auto;
+}
+#root main .circle h2 {
+  color: hsl(221, 100%, 96%);
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+#root main .circle p {
+  color: hsl(241, 100%, 89%);
+  font-weight: 700;
+  margin: 1rem auto;
+}
+#root aside {
+  grid-area: side;
+}
+#root aside h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 2rem 1rem;
+  color: hsl(224, 30%, 27%);
+}
+#root aside .summary-container {
+  margin: 2rem;
+}
+#root aside .summary-container .summary {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+#root aside .summary-container .summary .inline h3 {
+  font-weight: 600;
+}
+#root aside .summary-container .summary .span h3 {
+  font-weight: 600;
+  color: hsl(224, 30%, 27%);
+}
+#root aside .summary-container .summary .span span {
+  font-weight: 500;
+  color: gray;
+  font-weight: 600;
+}
+#root aside .summary-container .summary .inline-block .icon {
+  margin-right: 0.8rem;
+}
+#root aside .summary-container .summary .inline-block h3 {
+  display: inline;
+}
+#root aside .summary-container #reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+#root aside .summary-container #reaction .inline h3 {
+  color: hsla(0, 100%, 67%, 0.8);
+}
+#root aside .summary-container #reaction:hover {
+  background-image: linear-gradient(to right, hsla(0, 100%, 67%, 0.1), hsla(0, 100%, 67%, 0.8));
+}
+#root aside .summary-container #memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+#root aside .summary-container #memory .inline h3 {
+  color: hsla(39, 100%, 56%, 0.8);
+}
+#root aside .summary-container #memory:hover {
+  background-image: linear-gradient(to right, hsla(39, 100%, 56%, 0.1), hsla(39, 100%, 56%, 0.8));
+}
+#root aside .summary-container #verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+#root aside .summary-container #verbal .inline h3 {
+  color: hsla(166, 100%, 37%, 0.8);
+}
+#root aside .summary-container #verbal:hover {
+  background-image: linear-gradient(to right, hsla(166, 100%, 37%, 0.1), hsla(166, 100%, 37%, 0.8));
+}
+#root aside .summary-container #visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+#root aside .summary-container #visual .inline h3 {
+  color: hsla(234, 85%, 45%, 0.8);
+}
+#root aside .summary-container #visual:hover {
+  background-image: linear-gradient(to right, hsla(234, 85%, 45%, 0.1), hsla(234, 85%, 45%, 0.8));
+}
+#root aside .btn {
+  width: 100%;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.5rem;
+  border: transparent;
+}
+#root aside .btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (min-width: 45em) {
+  #root {
+    width: 80%;
+    flex-direction: row;
+  }
+  #root main {
+    width: 50%;
+    border-bottom-left-radius: 0;
+    border-radius: 1rem;
+  }
+  #root aside {
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1rem 1rem 1rem hsl(241, 100%, 89%);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}/*# sourceMappingURL=input.css.map */
