@@ -45,7 +45,6 @@ body {
 }
 #root main {
   background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  grid-area: head;
   padding: 1.2rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
@@ -96,9 +95,6 @@ body {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
   margin: 1rem auto;
-}
-#root aside {
-  grid-area: side;
 }
 #root aside h2 {
   font-weight: 700;

@@ -10,17 +10,11 @@ body{
     background-color: u.$pale-blue;
 }
 #root{
-    //width: 100%;
-    //justify-content: center;
-    //display: grid;
+    
     display: flex;
     flex-direction: column;
-   // grid-template-areas:
-   // 'head'
-    //'side';
     main{
         background-image: linear-gradient(to bottom, u.$light-slate-blue, u.$light-royal-blue);
-        grid-area: head;
         padding: 1.2rem;
         h1{
             width: fit-content;
@@ -76,7 +70,6 @@ body{
 
 
     aside{
-        grid-area: side;
         h2{
             font-weight: 700;
             font-size: 1.5rem;
